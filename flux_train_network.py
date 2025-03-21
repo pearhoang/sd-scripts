@@ -566,7 +566,6 @@ def setup_parser() -> argparse.ArgumentParser:
     train_util.add_dit_training_arguments(parser)
     flux_train_utils.add_flux_train_arguments(parser)
 
-    parser.add_argument("--lr_final", type=float, default=2e-5, help="Final learning rate for cosine scheduler")
     parser.add_argument(
         "--split_mode",
         action="store_true",
